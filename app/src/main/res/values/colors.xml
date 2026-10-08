@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="accent_blue">#2D6CDF</color>
+    <color name="action_bar_bg">#E6121212</color>
+    <color name="outline_light">#66FFFFFF</color>
+
+    <color name="bg_light">#EEF1F7</color>
+    <color name="navy">#15305C</color>
+    <color name="navy_muted">#6B7A99</color>
+    <color name="card_stroke">#E1E5EE</color>
+
+    <color name="gradient_blue_start">#4FC3F7</color>
+    <color name="gradient_blue_end">#1976D2</color>
+    <color name="gradient_orange_start">#FFB74D</color>
+    <color name="gradient_orange_end">#F57C00</color>
+    <color name="gradient_teal_start">#4DB6AC</color>
+    <color name="gradient_teal_end">#00796B</color>
+    <color name="gradient_purple_start">#9575CD</color>
+    <color name="gradient_purple_end">#5E35B1</color>
+    <color name="gradient_green_start">#66BB6A</color>
+    <color name="gradient_green_end">#2E7D32</color>
+
+    <color name="placeholder_gray">#B0B8C4</color>
+</resources>

@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">GPS Camera</string>
+    <string name="capture_photo">Capture photo</string>
+    <string name="camera_permission_required">Camera permission is required to use GPS Camera.\nTap to grant permission.</string>
+    <string name="retake">Re-Capture</string>
+    <string name="next">Save</string>
+    <string name="back">Back</string>
+    <string name="gallery">Gallery</string>
+    <string name="no_photos_yet">No photos yet.\nCapture your first GPS photo!</string>
+    <string name="gallery_permission_required">Storage permission is required to view your saved photos.\nTap to grant permission.</string>
+    <string name="settings">Settings</string>
+    <string name="customize_info">Customize the info</string>
+    <string name="setting_location">Location</string>
+    <string name="setting_date">Date</string>
+    <string name="setting_time">Time</string>
+    <string name="setting_24_hour">24-hour format</string>
+    <string name="setting_lat_long">Latitude / Longitude</string>
+    <string name="view_on_map">View photos on map</string>
+    <string name="camera_title">Camera</string>
+    <string name="zoom_in">+</string>
+    <string name="zoom_out">−</string>
+    <string name="flash">Toggle flash</string>
+    <string name="flip_camera">Flip camera</string>
+    <string name="processing_photo">Processing photo…</string>
+    <string name="saving_photo">Saving…</string>
+    <string name="delete_photo">Delete photo</string>
+    <string name="share_photo">Share photo</string>
+    <string name="delete_photo_confirm_title">Delete photo?</string>
+    <string name="delete_photo_confirm_message">This photo will be permanently deleted.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="photo_deleted">Photo deleted</string>
+    <string name="delete_failed">Failed to delete photo</string>
+    <string name="layout_title">Layout</string>
+    <string name="apply">Apply</string>
+    <string name="customize">Customize</string>
+    <string name="layout_option_name">Layout %d</string>
+    <string name="rotate_photo">Rotate photo</string>
+    <string name="photo_grid">Photo Grid</string>
+    <string name="photo_grid_title">Photo Grid</string>
+    <string name="next_step">Next</string>
+    <string name="select_grid">Select Grid</string>
+    <string name="grid_color">Grid Color</string>
+    <string name="white">White</string>
+    <string name="black">Black</string>
+    <string name="save">Save</string>
+    <string name="timer">Self-timer</string>
+    <string name="timer_seconds_badge">%ds</string>
+
+    <string name="language_screen_title">Choose your language</string>
+    <string name="language_screen_subtitle">Select your preferred language to continue</string>
+    <string name="language_continue">Continue</string>
+    <string name="language_done">DONE</string>
+    <string name="language_downloading">Preparing language…</string>
+    <string name="language_download_failed">Failed to download language: %s</string>
+
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <string name="onboarding_skip">Skip</string>
+
+    <string name="onboarding_title_1">Stamp the Moment</string>
+    <string name="onboarding_desc_1">Every photo is auto-stamped with your location, address, date and time — proof of where and when it was taken.</string>
+    <string name="onboarding_title_2">Your Style, Your Layout</string>
+    <string name="onboarding_desc_2">Choose from multiple stamp layouts and colors so your GPS photos always look the way you want.</string>
+    <string name="onboarding_title_4">See Everywhere You\'ve Been</string>
+    <string name="onboarding_desc_4">Every capture drops a pin on the map, so you can revisit the places behind your photos.</string>
+    <string name="onboarding_title_5">Ready to Explore?</string>
+    <string name="onboarding_desc_5">Grant a couple of quick permissions and start capturing GPS-stamped photos right away.</string>
+    <string name="onboarding_placeholder_title">Browse Your Photo Grid</string>
+    <string name="onboarding_placeholder_desc">All your GPS-stamped photos, organized in a clean grid you can revisit anytime.</string>
+
+    <string name="permission_access_title">Permission Access</string>
+    <string name="permission_access_subtitle">Allow the permissions below to get the best GPS Camera experience.</string>
+
+    <string name="permission_camera_title">Camera</string>
+    <string name="permission_camera_desc">Take GPS-stamped photos</string>
+
+    <string name="permission_location_title">Location</string>
+    <string name="permission_location_desc">Add your current location to photos</string>
+
+    <string name="permission_photos_title">Photos</string>
+    <string name="permission_photos_desc">Save and access your photos</string>
+
+    <string name="permission_allow">Allow</string>
+    <string name="permission_allowed">✓ Allowed</string>
+
+    <string name="permission_privacy_title">Your privacy matters</string>
+    <string name="permission_privacy_desc">Permissions are used only when required by app features.</string>
+
+    <string name="permission_continue">Continue</string>
+
+
+    <string name="uninstall">Uninstall</string>
+    <string name="uninstall_gps_camera">Uninstall GPS Camera</string>
+
+    <string name="why_remove_app">Why remove the app?</string>
+    <string name="try_again">Try Again</string>
+    <string name="still_want_to_uninstall">Still want to uninstall ? </string>
+
+    <string name="why_uninstall">Why are you uninstalling GPS Camera?</string>
+    <string name="reason_ads">Too many advertisements</string>
+    <string name="reason_not_needed">I do not need the app anymore</string>
+    <string name="reason_difficult">The app is difficult to use</string>
+    <string name="reason_not_working">The app does not work properly</string>
+    <string name="reason_other">Other</string>
+
+    <string name="continue_using_app">Continue Using App</string>
+
+
+</resources>

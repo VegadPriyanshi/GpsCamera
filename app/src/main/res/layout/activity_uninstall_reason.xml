@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/nativeAdContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="60dp"
+            android:paddingBottom="24dp">
+
+            <!-- Back Arrow -->
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:padding="12dp"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="#17145C" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:text="@string/why_uninstall"
+                android:textAlignment="center"
+                android:textColor="#17145C"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Please select a reason"
+                android:textAlignment="center"
+                android:textColor="#777777"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+            <!-- Reasons Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/reasonCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="#F7F4FF"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitle">
+
+                <RadioGroup
+                    android:id="@+id/reasonGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="8dp">
+
+                    <RadioButton
+                        android:id="@+id/reasonAds"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:buttonTint="#6937F5"
+                        android:paddingStart="8dp"
+                        android:text="@string/reason_ads"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/reasonNotNeeded"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:buttonTint="#6937F5"
+                        android:paddingStart="8dp"
+                        android:text="@string/reason_not_needed"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/reasonDifficult"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:buttonTint="#6937F5"
+                        android:paddingStart="8dp"
+                        android:text="@string/reason_difficult"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/reasonNotWorking"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:buttonTint="#6937F5"
+                        android:paddingStart="8dp"
+                        android:text="@string/reason_not_working"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/reasonOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:buttonTint="#6937F5"
+                        android:paddingStart="8dp"
+                        android:text="@string/reason_other"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+
+                </RadioGroup>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:id="@+id/actionButtons"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reasonCard">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUninstall"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/uninstall"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:backgroundTint="#6937F5"
+                    app:cornerRadius="27dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnExit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="Exit"
+                    android:textAllCaps="false"
+                    android:textColor="#6937F5"
+                    android:textStyle="bold"
+                    app:backgroundTint="@android:color/white"
+                    app:cornerRadius="27dp"
+                    app:strokeColor="#6937F5"
+                    app:strokeWidth="1.5dp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- Bottom Native Ad Container -->
+    <FrameLayout
+        android:id="@+id/nativeAdContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerNativeAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/bg_native_ad_card" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <include
+            android:id="@+id/nativeAdView"
+            layout="@layout/native_ad_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

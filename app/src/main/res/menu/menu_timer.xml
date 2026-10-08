@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/timerOff"
+            android:title="Off" />
+        <item
+            android:id="@+id/timer3s"
+            android:title="3s" />
+        <item
+            android:id="@+id/timer5s"
+            android:title="5s" />
+        <item
+            android:id="@+id/timer10s"
+            android:title="10s" />
+    </group>
+</menu>

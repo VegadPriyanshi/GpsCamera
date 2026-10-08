@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "300743124033",
+    "project_id": "gps-camera-445bb",
+    "storage_bucket": "gps-camera-445bb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300743124033:android:94ea332d693ff1bbf2d2c0",
+        "android_client_info": {
+          "package_name": "com.gps.camera.map.photo.gpscamera"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs1eLaTb5hu0p57XK2aTDPByK4r8GZ8M8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300743124033:android:1066c344a7ae8a84f2d2c0",
+        "android_client_info": {
+          "package_name": "com.rb.gpscamera"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs1eLaTb5hu0p57XK2aTDPByK4r8GZ8M8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

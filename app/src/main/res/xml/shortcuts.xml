@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="uninstall_gps_camera"
+        android:enabled="true"
+        android:icon="@drawable/ic_delete"
+        android:shortcutShortLabel="@string/uninstall"
+        android:shortcutLongLabel="@string/uninstall_gps_camera">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.gps.camera.map.photo.gpscamera"
+            android:targetClass="com.gps.camera.map.photo.gpscamera.features.uninstall.ui.UninstallSplashActivity" />
+
+    </shortcut>
+
+</shortcuts>

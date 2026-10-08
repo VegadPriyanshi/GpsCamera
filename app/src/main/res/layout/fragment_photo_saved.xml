@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    tools:context=".features.preview.ui.PhotoSavedFragment">
+
+    <ImageButton
+        android:id="@+id/btnBackSaved"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back"
+        android:padding="10dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/navy" />
+
+    <ImageButton
+        android:id="@+id/btnGallerySaved"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/gallery"
+        android:padding="10dp"
+        android:src="@drawable/ic_gallery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/navy" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/photoCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBackSaved"
+        app:layout_constraintWidth_max="360dp">
+
+        <ImageView
+            android:id="@+id/ivSavedThumbnail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShareSaved"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/accent_blue"
+        android:text="@string/share_photo"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="26dp"
+        app:icon="@drawable/ic_share"
+        app:iconGravity="textStart"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/photoCard"
+        app:layout_constraintStart_toStartOf="@id/photoCard"
+        app:layout_constraintTop_toBottomOf="@id/photoCard" />
+
+    <FrameLayout
+        android:id="@+id/nativeAdContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerNativeAd"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_native_ad_card" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <include
+            android:id="@+id/nativeAdView"
+            layout="@layout/native_ad_medium"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
